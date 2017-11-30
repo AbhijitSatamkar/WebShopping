@@ -11,7 +11,8 @@ public class pagecontroller {
 	public ModelAndView index() {
 		
 		ModelAndView mv=new ModelAndView("page");
-		mv.addObject("greeting", "<h2>Hello from Abhi & Hi from Snehal	<h2>");
+		mv.addObject("title", "Home");
+		mv.addObject("userClickHome", true);
 		return mv;
 	}
 }
