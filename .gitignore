@@ -23,3 +23,5 @@ hs_err_pid*
 
 /webshopping/target/
 /webshopbkd/target/
+/.metadata/
+/.recommenders/
