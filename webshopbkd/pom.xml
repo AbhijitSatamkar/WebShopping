@@ -13,13 +13,17 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<springmvc.ver>5.0.2.RELEASE</springmvc.ver>
+		<h2.ver>1.4.195</h2.ver>
+		<hibernate.ver>5.2.7.Final</hibernate.ver>
+		<commons.ver>2.1.1</commons.ver>
 	</properties>
 
 	<dependencies>
+		<!-- JUNIT version 4.12 -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
+			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
@@ -27,6 +31,30 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>${springmvc.ver}</version>
+		</dependency>
+		<!-- Spring Orm -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${springmvc.ver}</version>
+		</dependency>
+		<!-- H2 database dependency -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>${h2.ver}</version>
+		</dependency>
+		<!-- Hibernate dependency -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.ver}</version>
+		</dependency>
+		<!-- Database Connection Pooling dependency -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
+			<version>${commons.ver}</version>
 		</dependency>
 	</dependencies>
 

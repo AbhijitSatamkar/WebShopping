@@ -21,7 +21,7 @@ public class pagecontroller {
 		ModelAndView mv=new ModelAndView("page");
 		mv.addObject("title", "Home");
 		mv.addObject("userClickHome", true);
-		// passing the list of cateories
+		// passing the list of categories
 		mv.addObject("categories", categoryDAO.list());
 
 		return mv;
