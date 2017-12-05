@@ -12,7 +12,7 @@
 
 				<div class="col-lg-12">
 
-					<c:if test="${userClickAllProducts == true}">
+					<c:if test="${userClickProducts == true}">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item" ><a href="${ContextRoot}/home">Home</a></li>
 							<li class="breadcrumb-item active" >All Products</li>

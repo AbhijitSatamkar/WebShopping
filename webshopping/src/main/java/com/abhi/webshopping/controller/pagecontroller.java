@@ -53,8 +53,8 @@ public class pagecontroller {
 	public ModelAndView showAllProducts() {
 		
 		ModelAndView mv=new ModelAndView("page");
-		mv.addObject("title", "All Products");
-		mv.addObject("userClickAllProducts", true);
+		mv.addObject("title", "Products");
+		mv.addObject("userClickProducts", true);
 		// passing the list of cateories
 		mv.addObject("categories", categoryDAO.list());
 

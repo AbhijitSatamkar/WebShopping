@@ -72,7 +72,7 @@ public class CategoryDAOImpl implements CategoryDAO {
 	@Override
 	public boolean delete(Category category) {
 		
-		category .setActive(false);
+		category.setActive(false);
 		try {
 			//add category to database table
 			sessionFactory.getCurrentSession().update(category);
