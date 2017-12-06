@@ -24,6 +24,7 @@
 
 <script>
 	window.menu = '${title}'
+	window.contextRoot = '${contextRoot}'
 </script>
 
 <!-- Bootstrap core CSS -->
@@ -31,6 +32,10 @@
 
 <!-- Bootstrap Readable Theme CSS -->
 <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
+
+<!-- DataTables BootStrap CSS -->
+<link href="${css}/dataTables.bootstrap4.css" rel="stylesheet">
+
 
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
@@ -66,6 +71,11 @@
 			<c:if test="${userClickProducts == true or userClickCategoryProducts == true }">
 				<%@include file="listProducts.jsp"%>
 			</c:if>
+			
+			<!-- Loading when user click show product -->
+			<c:if test="${userClickShowProduct == true }">
+				<%@include file="singleProduct.jsp"%>
+			</c:if>
 
 			<!-- /.container -->
 		</div>
@@ -76,6 +86,13 @@
 		<script src="${js}/jquery.min.js"></script>
 		<script src="${js}/bootstrap.bundle.min.js"></script>
 
+		<!-- DataTables jquery JavaScript -->
+		<script src="${js}/jquery.dataTables.js"></script>
+		
+		<!-- DataTables Bootstrap JavaScript -->
+		<script src="${js}/dataTables.bootstrap4.js"></script>
+	
+		
 		<!-- Customized JavaScript -->
 		<script src="${js}/myapp.js"></script>
 	</div>

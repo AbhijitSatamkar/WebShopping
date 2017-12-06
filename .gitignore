@@ -25,3 +25,4 @@ hs_err_pid*
 /webshopbkd/target/
 /.metadata/
 /.recommenders/
+/build/
